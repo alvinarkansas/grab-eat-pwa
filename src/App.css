@@ -1,6 +1,7 @@
 body {
   font-family: "Nunito Sans", sans-serif;
 }
+
 .page {
   padding-inline: 16px;
   padding-block: 32px;
@@ -87,4 +88,46 @@ h2 {
 }
 .merchant-detail > div > div > span:first-child {
   margin-right: 8px;
+}
+
+@media (min-width: 640px) {
+  .page {
+    padding: 64px 12.5vw;
+  }
+
+  .merchants {
+    grid-template-columns: 1fr 1fr;
+  }
+  .merchant {
+    display: block;
+  }
+  .merchant h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .merchant-thumbnail {
+    height: 144px;
+    width: 100%;
+  }
+  .preferred-merchant {
+    margin-bottom: 8px;
+    position: static;
+  }
+  .preferred-merchant span {
+    display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #00b14f;
+  }
+  .merchant-description {
+    margin-top: 12px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1024px) {
+  .merchants {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
