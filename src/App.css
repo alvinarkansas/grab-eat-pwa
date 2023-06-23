@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.page {
+  padding-inline: 16px;
+  padding-block: 32px;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-size: 24px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-weight: bold;
+  margin-bottom: 4px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.merchants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.merchant {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 16px;
+  position: relative;
+}
+.merchant-thumbnail {
+  height: 96px;
+  width: 96px;
+  flex-shrink: 0;
+  position: relative;
+}
+.merchant-thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.promo-tag {
+  position: absolute;
+  top: 8px;
+  left: -4px;
+  padding: 4px;
   color: white;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  background: #00b14f;
 }
-
-.App-link {
-  color: #61dafb;
+.tag-tail {
+  border-style: solid;
+  border-width: 0 4px 4px 0;
+  border-color: transparent #008c3f transparent transparent;
+  position: absolute;
+  top: 24px;
+  left: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.preferred-merchant {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: -8px;
+  left: 88px;
+}
+.preferred-merchant span {
+  display: none;
+}
+.merchant-description {
+  width: 100%;
+  word-wrap: break-word;
+  min-height: 1px;
+}
+.merchant-detail {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 20px;
+}
+.merchant-detail > p {
+  margin-bottom: 4px;
+}
+.merchant-detail > div {
+  display: flex;
+  gap: 16px;
+}
+.merchant-detail > div > div > span:first-child {
+  margin-right: 8px;
 }
