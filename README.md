@@ -1,4 +1,4 @@
-# aiesec-coding-demo
+# grab-eat-pwa
 This repository is dedicated for Hacktiv8's Learning With Alumni: Build PWA With React brief coding demo.
 
 <br>
